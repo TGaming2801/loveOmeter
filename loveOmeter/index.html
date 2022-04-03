@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>loveOmeter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="form">
+        <div id="nonPopup" class="nonPopup">
+            <table>
+
+                <tr>
+                    <td>
+                        <input type="text" id="lover1" class="input" placeholder="Lover 1">
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <input type="text" id="lover2" class="input" placeholder="Lover 2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button onclick="loveOmeterFunction()" class="button">Check your Love Level </button>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td> <br> </td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <table class="output">
+
+                <tr>
+                    <td></td>
+                    <td id="loveOmeter">loveOmeter: </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td id="loveRes"> <br> </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td id="loveTextSpace" class="loveText"> </td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="madeBy">
+        <a href="https://instagram.com/tgaming2801" id="madeByLink">Made By TGaming</a>
+    </div>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>ERROR</h1>
+            <p id="popupText"></p>
+            <button id="closeModal" class="closeModal" onclick="closePopup()">Close Me</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
